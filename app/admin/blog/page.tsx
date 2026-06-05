@@ -2,9 +2,14 @@ import { db } from "@/lib/db";
 import Link from "next/link";
 
 export default async function AdminBlogList() {
-  const posts = await db.post.findMany({
-    orderBy: { createdAt: "desc" },
-  });
+  let posts: any[] = [];
+  try {
+    posts = await db.post.findMany({
+      orderBy: { createdAt: "desc" },
+    });
+  } catch (error) {
+    console.warn("Database connection failed for Admin Blog.");
+  }
 
   return (
     <div className="space-y-8">

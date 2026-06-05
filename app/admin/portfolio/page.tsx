@@ -2,9 +2,14 @@ import { db } from "@/lib/db";
 import Link from "next/link";
 
 export default async function AdminPortfolioList() {
-  const projects = await db.portfolio.findMany({
-    orderBy: { createdAt: "desc" },
-  });
+  let projects: any[] = [];
+  try {
+    projects = await db.portfolio.findMany({
+      orderBy: { createdAt: "desc" },
+    });
+  } catch (error) {
+    console.warn("Database connection failed for Admin Portfolio.");
+  }
 
   return (
     <div className="space-y-8">
