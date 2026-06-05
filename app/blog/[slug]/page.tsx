@@ -7,13 +7,22 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  const posts = await db.post.findMany({ select: { slug: true } });
-  return posts.map((post) => ({ slug: post.slug }));
+  try {
+    const posts = await db.post.findMany({ select: { slug: true } });
+    return posts.map((post) => ({ slug: post.slug }));
+  } catch (error) {
+    return [];
+  }
 }
 
 export async function generateMetadata({ params }: PageProps) {
   const { slug } = await params;
-  const post = await db.post.findUnique({ where: { slug } });
+  let post = null;
+  try {
+    post = await db.post.findUnique({ where: { slug } });
+  } catch (error) {
+    return { title: "Article Not Found | SRGroupTM" };
+  }
   
   if (!post || !post.published) return { title: "Article Not Found | SRGroupTM" };
   
@@ -39,7 +48,12 @@ const PILLAR_COLORS: Record<string, string> = {
 
 export default async function BlogPostPage({ params }: PageProps) {
   const { slug } = await params;
-  const post = await db.post.findUnique({ where: { slug } });
+  let post = null;
+  try {
+    post = await db.post.findUnique({ where: { slug } });
+  } catch (error) {
+    notFound();
+  }
   
   if (!post || !post.published) notFound();
 

@@ -9,7 +9,12 @@ interface PageProps {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const project = await db.portfolio.findUnique({ where: { slug } });
+  let project = null;
+  try {
+    project = await db.portfolio.findUnique({ where: { slug } });
+  } catch (error) {
+    return { title: "Project Not Found" };
+  }
   
   if (!project || !project.published) return { title: "Project Not Found" };
   
@@ -21,7 +26,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function PortfolioItemPage({ params }: PageProps) {
   const { slug } = await params;
-  const project = await db.portfolio.findUnique({ where: { slug } });
+  let project = null;
+  try {
+    project = await db.portfolio.findUnique({ where: { slug } });
+  } catch (error) {
+    notFound();
+  }
 
   if (!project || !project.published) notFound();
 

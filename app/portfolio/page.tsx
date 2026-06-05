@@ -8,10 +8,15 @@ export const metadata: Metadata = {
 };
 
 export default async function PortfolioPage() {
-  const projects = await db.portfolio.findMany({
-    where: { published: true },
-    orderBy: { createdAt: "desc" },
-  });
+  let projects: any[] = [];
+  try {
+    projects = await db.portfolio.findMany({
+      where: { published: true },
+      orderBy: { createdAt: "desc" },
+    });
+  } catch (error) {
+    console.warn("Database connection failed. Returning empty projects list.");
+  }
 
   return (
     <div className="overflow-hidden bg-slate-50 min-h-screen pb-24">

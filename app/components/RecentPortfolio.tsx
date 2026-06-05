@@ -2,11 +2,16 @@ import { db } from "@/lib/db";
 import Link from "next/link";
 
 export default async function RecentPortfolio() {
-  const projects = await db.portfolio.findMany({
-    where: { published: true },
-    orderBy: { createdAt: "desc" },
-    take: 3,
-  });
+  let projects: any[] = [];
+  try {
+    projects = await db.portfolio.findMany({
+      where: { published: true },
+      orderBy: { createdAt: "desc" },
+      take: 3,
+    });
+  } catch (error) {
+    console.warn("Database connection failed. Returning empty projects list.");
+  }
 
   if (projects.length === 0) {
     return null; // Don't show the section if no projects exist

@@ -21,10 +21,15 @@ const AUTHOR_EMOJIS: Record<string, string> = {
 };
 
 export default async function BlogPage() {
-  const dbPosts = await db.post.findMany({
-    where: { published: true },
-    orderBy: { createdAt: "desc" },
-  });
+  let dbPosts: any[] = [];
+  try {
+    dbPosts = await db.post.findMany({
+      where: { published: true },
+      orderBy: { createdAt: "desc" },
+    });
+  } catch (error) {
+    console.warn("Database connection failed. Returning empty posts list.");
+  }
 
   if (dbPosts.length === 0) {
     return (
