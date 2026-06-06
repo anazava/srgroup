@@ -1,4 +1,5 @@
 import { db } from "@/lib/db";
+import { staticPortfolioItems } from "@/lib/staticPortfolio";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Metadata } from "next";
@@ -13,7 +14,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   try {
     project = await db.portfolio.findUnique({ where: { slug } });
   } catch (error) {
-    return { title: "Project Not Found" };
+    // Ignore DB error for metadata
+  }
+  
+  if (!project) {
+    project = staticPortfolioItems.find(p => p.slug === slug) as any;
   }
   
   if (!project || !project.published) return { title: "Project Not Found" };
@@ -30,7 +35,11 @@ export default async function PortfolioItemPage({ params }: PageProps) {
   try {
     project = await db.portfolio.findUnique({ where: { slug } });
   } catch (error) {
-    notFound();
+    // Ignore DB error
+  }
+
+  if (!project) {
+    project = staticPortfolioItems.find(p => p.slug === slug) as any;
   }
 
   if (!project || !project.published) notFound();

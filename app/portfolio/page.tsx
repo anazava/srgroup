@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 import { db } from "@/lib/db";
+import { staticPortfolioItems } from "@/lib/staticPortfolio";
 import Link from "next/link";
 import { Metadata } from "next";
 
@@ -17,8 +18,11 @@ export default async function PortfolioPage() {
       orderBy: { createdAt: "desc" },
     });
   } catch (error) {
-    console.warn("Database connection failed. Returning empty projects list.");
+    console.warn("Database connection failed. Proceeding with static items only.");
   }
+
+  // Merge static items with DB items
+  projects = [...staticPortfolioItems, ...projects];
 
   return (
     <div className="overflow-hidden bg-slate-50 min-h-screen pb-24">

@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 import { db } from "@/lib/db";
+import { staticPortfolioItems } from "@/lib/staticPortfolio";
 import Link from "next/link";
 
 export default async function RecentPortfolio() {
@@ -12,8 +13,11 @@ export default async function RecentPortfolio() {
       take: 3,
     });
   } catch (error) {
-    console.warn("Database connection failed. Returning empty projects list.");
+    console.warn("Database connection failed. Proceeding with static items.");
   }
+
+  // Merge and slice
+  projects = [...staticPortfolioItems, ...projects].slice(0, 3);
 
   if (projects.length === 0) {
     return null; // Don't show the section if no projects exist
