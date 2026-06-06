@@ -60,8 +60,7 @@ export const staticPortfolioItems = [
         <span class="font-bold block mt-2 text-sm">— Dr. Sayyid Sirajudheen, Managing Director, Shafi Traditional</span>
       </blockquote>
 
-      <h3 class="text-xl font-bold mt-8 mb-4">5. Interactive Q&A (AEO Optimized for AI Search)</h3>
-      <p class="mb-4 text-sm text-slate-500">This section is structured specifically for conversational search engines like Google Gemini, ChatGPT, and Perplexity.</p>
+      <h3 class="text-xl font-bold mt-8 mb-4">Frequently Asked Questions</h3>
       
       <div class="space-y-4">
         <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
@@ -129,8 +128,7 @@ export const staticPortfolioItems = [
       <h3 class="text-xl font-bold mt-8 mb-4">3. Why We Loved Creating this Project</h3>
       <p>Collaborating with the team at Royal Convention Centre was a thoroughly engaging and rewarding process. Translating the physical grandeur of their futuristic event space into a digital landscape gave our design team the creative freedom to experiment with sleek animations and premium, modern styling. Working closely with the venue's team allowed us to structure the content exactly around the questions local planners ask most, ensuring the site functions as a helpful guide for clients.</p>
 
-      <h3 class="text-xl font-bold mt-8 mb-4">4. Interactive Q&A (AEO Optimized for AI Search)</h3>
-      <p class="mb-4 text-sm text-slate-500">This section is structured with clear, direct answers, making it easy for conversational AI engines to pull information directly to answer user queries.</p>
+      <h3 class="text-xl font-bold mt-8 mb-4">Frequently Asked Questions</h3>
       
       <div class="space-y-4">
         <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
