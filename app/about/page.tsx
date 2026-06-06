@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
+import { Instagram, Facebook, Linkedin, MessageCircle } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "About Our Studio | SRGroupTM — Art & Code",
@@ -350,6 +351,21 @@ export default function AboutPage() {
             </svg>
             Start a Conversation
           </a>
+          
+          <div className="pt-8 flex items-center justify-center gap-4">
+            <a href="https://www.instagram.com/srgrouptm" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-12 h-12 rounded-full bg-slate-800 text-slate-400 hover:text-pink-400 hover:bg-slate-700 transition-colors" aria-label="Instagram">
+              <Instagram size={20} />
+            </a>
+            <a href="https://www.facebook.com/srgrouptm/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-12 h-12 rounded-full bg-slate-800 text-slate-400 hover:text-blue-400 hover:bg-slate-700 transition-colors" aria-label="Facebook">
+              <Facebook size={20} />
+            </a>
+            <a href="https://www.linkedin.com/in/sr-group-760359188/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-12 h-12 rounded-full bg-slate-800 text-slate-400 hover:text-sky-400 hover:bg-slate-700 transition-colors" aria-label="LinkedIn">
+              <Linkedin size={20} />
+            </a>
+            <a href="https://wa.me/919400112833" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-12 h-12 rounded-full bg-slate-800 text-slate-400 hover:text-green-400 hover:bg-slate-700 transition-colors" aria-label="WhatsApp">
+              <MessageCircle size={20} />
+            </a>
+          </div>
         </div>
       </section>
     </div>

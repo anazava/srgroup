@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Instagram, Facebook, Linkedin, MessageCircle } from "lucide-react";
 
 const LINKS = [
   { label: "Home",       href: "/" },
@@ -63,15 +64,31 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Contact */}
+          {/* Contact & Social */}
           <div className="md:col-span-2">
             <h3 className="text-xs font-bold text-white uppercase tracking-widest mb-5">Contact</h3>
-            <div className="space-y-3 text-sm">
+            <div className="space-y-3 text-sm mb-6">
               <a href="mailto:info@srgrouptm.com" className="block text-slate-400 hover:text-sky-400 transition-colors text-xs break-all">
                 info@srgrouptm.com
               </a>
               <a href="tel:+919400112833" className="block text-slate-400 hover:text-sky-400 transition-colors text-xs">
                 +91 94001 12833
+              </a>
+            </div>
+            
+            <h3 className="text-xs font-bold text-white uppercase tracking-widest mb-4">Follow Us</h3>
+            <div className="flex items-center gap-4">
+              <a href="https://www.instagram.com/srgrouptm" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-pink-500 transition-colors" aria-label="Instagram">
+                <Instagram size={18} />
+              </a>
+              <a href="https://www.facebook.com/srgrouptm/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-500 transition-colors" aria-label="Facebook">
+                <Facebook size={18} />
+              </a>
+              <a href="https://www.linkedin.com/in/sr-group-760359188/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-400 transition-colors" aria-label="LinkedIn">
+                <Linkedin size={18} />
+              </a>
+              <a href="https://wa.me/919400112833" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-green-500 transition-colors" aria-label="WhatsApp">
+                <MessageCircle size={18} />
               </a>
             </div>
           </div>
