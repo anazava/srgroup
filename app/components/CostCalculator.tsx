@@ -2,6 +2,40 @@
 
 import { useState } from "react";
 
+const Toggle = ({
+  checked, onChange, label, desc, price,
+}: {
+  checked: boolean; onChange: (v: boolean) => void; label: string; desc: string; price: string;
+}) => (
+  <label
+    className={`flex items-center justify-between gap-4 rounded-xl border p-3.5 sm:p-4 cursor-pointer transition-all duration-300 ${
+      checked ? "border-sky-300 bg-sky-50/50 ring-1 ring-sky-300/50" : "border-slate-100 bg-white hover:border-slate-200"
+    }`}
+  >
+    <div className="flex items-center gap-3">
+      <div
+        className={`flex-shrink-0 h-5 w-5 rounded border-2 flex items-center justify-center transition-all ${
+          checked ? "border-sky-500 bg-sky-500" : "border-slate-300 bg-slate-50"
+        }`}
+        onClick={() => onChange(!checked)}
+      >
+        {checked && (
+          <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+        )}
+      </div>
+      <div>
+        <span className={`block text-sm font-bold transition-colors ${checked ? "text-sky-800" : "text-slate-900"}`}>{label}</span>
+        <span className="hidden sm:block text-[11px] text-slate-500">{desc}</span>
+      </div>
+    </div>
+    <span className={`text-sm font-extrabold flex-shrink-0 transition-colors ${checked ? "text-sky-600" : "text-slate-400"}`}>
+      {price}
+    </span>
+  </label>
+);
+
 export default function CostCalculator() {
   const [siteType, setSiteType] = useState<"static" | "dynamic">("static");
   const [includeBranding, setIncludeBranding] = useState(false);
@@ -33,39 +67,7 @@ export default function CostCalculator() {
     return `https://wa.me/919400112833?text=${encodeURIComponent(txt)}`;
   };
 
-  const Toggle = ({
-    checked, onChange, label, desc, price,
-  }: {
-    checked: boolean; onChange: (v: boolean) => void; label: string; desc: string; price: string;
-  }) => (
-    <label
-      className={`flex items-center justify-between gap-4 rounded-xl border p-3.5 sm:p-4 cursor-pointer transition-all duration-300 ${
-        checked ? "border-sky-300 bg-sky-50/50 ring-1 ring-sky-300/50" : "border-slate-100 bg-white hover:border-slate-200"
-      }`}
-    >
-      <div className="flex items-center gap-3">
-        <div
-          className={`flex-shrink-0 h-5 w-5 rounded border-2 flex items-center justify-center transition-all ${
-            checked ? "border-sky-500 bg-sky-500" : "border-slate-300 bg-slate-50"
-          }`}
-          onClick={() => onChange(!checked)}
-        >
-          {checked && (
-            <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-            </svg>
-          )}
-        </div>
-        <div>
-          <span className={`block text-sm font-bold transition-colors ${checked ? "text-sky-800" : "text-slate-900"}`}>{label}</span>
-          <span className="hidden sm:block text-[11px] text-slate-500">{desc}</span>
-        </div>
-      </div>
-      <span className={`text-sm font-extrabold flex-shrink-0 transition-colors ${checked ? "text-sky-600" : "text-slate-400"}`}>
-        {price}
-      </span>
-    </label>
-  );
+
 
   return (
     <div className="rounded-[2rem] border border-slate-100 bg-white p-6 sm:p-8 shadow-sm flex flex-col gap-6">

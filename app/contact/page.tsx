@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Instagram, Facebook, Linkedin, MessageCircle } from "lucide-react";
+import { InstagramIcon, FacebookIcon, LinkedinIcon, WhatsAppIcon } from "@/app/components/SocialIcons";
 
 interface FormFields {
   name: string;
@@ -182,16 +182,16 @@ export default function ContactPage() {
                 <h3 className="text-[11px] font-bold uppercase tracking-widest text-slate-400">Follow Us</h3>
                 <div className="flex items-center gap-3">
                   <a href="https://www.instagram.com/srgrouptm" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-10 h-10 rounded-full bg-pink-50 text-pink-500 hover:bg-pink-100 transition-colors" aria-label="Instagram">
-                    <Instagram size={18} />
+                    <InstagramIcon size={18} />
                   </a>
                   <a href="https://www.facebook.com/srgrouptm/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-10 h-10 rounded-full bg-blue-50 text-blue-600 hover:bg-blue-100 transition-colors" aria-label="Facebook">
-                    <Facebook size={18} />
+                    <FacebookIcon size={18} />
                   </a>
                   <a href="https://www.linkedin.com/in/sr-group-760359188/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-10 h-10 rounded-full bg-sky-50 text-sky-600 hover:bg-sky-100 transition-colors" aria-label="LinkedIn">
-                    <Linkedin size={18} />
+                    <LinkedinIcon size={18} />
                   </a>
                   <a href="https://wa.me/919400112833" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-10 h-10 rounded-full bg-green-50 text-green-500 hover:bg-green-100 transition-colors" aria-label="WhatsApp">
-                    <MessageCircle size={18} />
+                    <WhatsAppIcon size={18} />
                   </a>
                 </div>
               </div>
