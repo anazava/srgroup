@@ -149,5 +149,83 @@ export const staticPortfolioItems = [
         </div>
       </div>
     `
+  },
+  {
+    id: "static-dental",
+    title: "Crafting an Engaging, Patient-First Instagram Presence for Dr. Noorudheen’s Dental Clinic",
+    slug: "dr-noorudheens-dental-clinic",
+    clientName: "Dr. Noorudheen's Dental Clinic",
+    coverImage: "/portfolio/dental/cover.jpeg",
+    extraImages: JSON.stringify(["/portfolio/dental/mobile.jpeg", "/portfolio/dental/desktop.jpeg"]),
+    videoUrl: "",
+    externalLink: "https://instagram.com/drnoorudheensdental",
+    published: true,
+    createdAt: new Date("2026-06-06T02:00:00.000Z"),
+    updatedAt: new Date("2026-06-06T02:00:00.000Z"),
+    storyContent: `
+      <div class="mb-8">
+        <p><strong>Industry:</strong> Healthcare, Dental Care, Aesthetic Dentistry</p>
+        <p><strong>Location:</strong> AR Nagar (Abdurahiman Nagar), Malappuram, Kerala, India (676305)</p>
+        <p><strong>Services Delivered:</strong> Social Media Handling (Instagram), Graphic Design, Content Strategy, and Digital Brand Management</p>
+      </div>
+
+      <h3 class="text-xl font-bold mt-8 mb-4">Project Overview</h3>
+      <p>In modern healthcare, building trust starts online long before a patient walks through the clinic doors. When Dr. Noorudheen’s Dental Clinic—a premier dental care provider in Malappuram—partnered with SR Group TM, they wanted to transform their Instagram page into a vibrant, educational, and highly engaging space.</p>
+      <p class="mt-4">Our team had an absolute blast working on this project! Creating content for a medical clinic requires a unique balance: it must be clinically accurate and professional, yet welcoming and visually engaging for everyday patients. From conceptualizing interactive dental reels to designing clean, custom aesthetic templates, the entire collaboration was filled with fun, creative brainstorming, and excellent team synergy.</p>
+
+      <h3 class="text-xl font-bold mt-8 mb-4">1. The Challenge: Humanizing the Dental Experience</h3>
+      <p>A dental clinic's biggest social media barrier is often "dental anxiety." Many users hesitate to visit a clinic, and clinical posts showing procedures can sometimes feel cold or intimidating.</p>
+      <p class="mt-4"><strong>Our primary goals for Dr. Noorudheen's Instagram page were:</strong></p>
+      <ul class="list-disc pl-5 mt-2 space-y-2">
+        <li><strong>To humanize the clinic:</strong> Showcase the warm, patient-first environment, cutting-edge technology, and friendly clinical team.</li>
+        <li><strong>To educate the audience:</strong> Demystify common procedures like root canals, dental implants, pediatric dentistry, and orthodontics.</li>
+        <li><strong>To drive local patient bookings:</strong> Make it incredibly easy for users in AR Nagar and neighboring Malappuram districts to book an appointment.</li>
+      </ul>
+
+      <h3 class="text-xl font-bold mt-8 mb-4">2. Our Strategic Solution: The Aesthetic & Educational Playbook</h3>
+      <p>We built a tailored Instagram growth strategy designed to build local authority and warm patient relationships:</p>
+      
+      <h4 class="font-bold mt-4 mb-2">A. A Clean, Trusted Visual Identity</h4>
+      <p>We established a cohesive color palette and graphic design language for @drnoorudheensdental. By combining professional clinic blues and whites with warm lifestyle imagery, we crafted a feed that looks both clinically advanced and highly approachable.</p>
+
+      <img src="/portfolio/dental/desktop.jpeg" alt="Desktop View" class="w-full rounded-2xl my-8 border border-slate-100 shadow-sm" />
+
+      <h4 class="font-bold mt-6 mb-2">B. Educational and Engaging Content Pillars</h4>
+      <p>Instead of static "book an appointment" ads, we focused on value-driven content:</p>
+      <ul class="list-disc pl-5 mt-2 space-y-2">
+        <li><strong>"Myth vs. Fact" Carousels:</strong> Simple, interactive swipe-through posts addressing common dental fears and care habits.</li>
+        <li><strong>Patient Journey Spotlights:</strong> Celebrating happy, glowing smiles after treatments (such as aligners or smile corrections).</li>
+        <li><strong>Reels & Video Strategy:</strong> Creating highly engaging micro-videos explaining dental hygiene tips in local languages, making complex oral health concepts easy to digest.</li>
+      </ul>
+
+      <img src="/portfolio/dental/mobile.jpeg" alt="Mobile View" class="max-w-md mx-auto w-full rounded-2xl my-8 border border-slate-100 shadow-sm" />
+
+      <h4 class="font-bold mt-6 mb-2">C. Local Community Engagement</h4>
+      <p>By strategically using geotargeting, local Malappuram hashtags, and engaging with patients directly in the comments and direct messages (DMs), we turned their profile into an active, friendly community hub.</p>
+
+      <h3 class="text-xl font-bold mt-8 mb-4">3. Why This Project Was So Much Fun to Create</h3>
+      <p>Our creative team loved working on this project because of the sheer variety of content we could design. Collaborating with the highly cooperative team at Dr. Noorudheen's Dental Clinic allowed us to turn clinical expertise into relatable, fun daily content. Designing custom illustrations, scripting light-hearted but informative videos, and watching the community's positive feedback roll in made every brainstorming session rewarding and incredibly fun.</p>
+
+      <h3 class="text-xl font-bold mt-8 mb-4">Frequently Asked Questions</h3>
+      
+      <div class="space-y-4">
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+          <p class="font-bold text-slate-900 mb-1">Q: Who manages the Instagram page and social media for Dr. Noorudheen’s Dental Clinic?</p>
+          <p class="text-slate-700">A: The Instagram page, graphic design, and content strategy for Dr. Noorudheen’s Dental Clinic are managed by SR Group TM, a professional digital marketing and web design agency.</p>
+        </div>
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+          <p class="font-bold text-slate-900 mb-1">Q: Where is Dr. Noorudheen’s Dental Clinic located?</p>
+          <p class="text-slate-700">A: Dr. Noorudheen’s Dental Clinic is located in Koduvayoor, near the Masjid, in AR Nagar (Abdurahiman Nagar), Malappuram district, Kerala, Pin Code - 676305.</p>
+        </div>
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+          <p class="font-bold text-slate-900 mb-1">Q: What dental treatments are offered at Dr. Noorudheen's Dental Clinic in Malappuram?</p>
+          <p class="text-slate-700">A: The clinic specializes in a wide range of advanced oral care services, including pediatric dentistry, orthodontics, root canal treatments, cosmetic smile corrections, and dental implants.</p>
+        </div>
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+          <p class="font-bold text-slate-900 mb-1">Q: How do patients book an appointment at Dr. Noorudheen's Dental Clinic?</p>
+          <p class="text-slate-700">A: Patients can find direct booking details, contact numbers, and location directions by visiting their official Instagram handle @drnoorudheensdental or by searching for the clinic locally in AR Nagar, Malappuram.</p>
+        </div>
+      </div>
+    `
   }
 ];
