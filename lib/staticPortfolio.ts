@@ -227,5 +227,85 @@ export const staticPortfolioItems = [
         </div>
       </div>
     `
+  },
+  {
+    id: "static-smilecraft",
+    title: "Building a High-Engagement, Trust-First Instagram Presence for Dr. Sheejith’s Smile Craft Dental Clinic",
+    slug: "dr-sheejith-smile-craft",
+    clientName: "Dr. Sheejith's Smile Craft Dental Clinic",
+    coverImage: "/portfolio/smilecraft/cover.jpeg",
+    extraImages: JSON.stringify(["/portfolio/smilecraft/banner.jpeg", "/portfolio/smilecraft/flatlay1.jpeg", "/portfolio/smilecraft/flatlay2.jpeg"]),
+    videoUrl: "",
+    externalLink: "https://instagram.com/dr.sheejith_smilecraft",
+    published: true,
+    createdAt: new Date("2026-06-06T03:00:00.000Z"),
+    updatedAt: new Date("2026-06-06T03:00:00.000Z"),
+    storyContent: `
+      <div class="mb-8">
+        <p><strong>Industry:</strong> Healthcare, Advanced Dentistry, Oral Implantology & Smile Design</p>
+        <p><strong>Location:</strong> Kozhikode (Calicut), Kerala, India</p>
+        <p><strong>Key Locations:</strong> Eranhipalam (Jawahar Housing Colony) & Panniyankara (Kallai Road)</p>
+        <p><strong>Services Delivered:</strong> Social Media Handling (Instagram), Content Strategy, Creative Video Direction, and Digital Brand Management</p>
+      </div>
+
+      <h3 class="text-xl font-bold mt-8 mb-4">Project Overview</h3>
+      <p>In modern specialist healthcare, a clinic's reputation depends heavily on the accessibility of its expertise online. Smile Craft Dental Clinic, founded by Dr. Sheejith M. (Prosthodontist, Implantologist, and Professor & Head of Prosthodontics), is widely recognized for world-class dental care in Kozhikode.</p>
+      <p class="mt-4">When Dr. Sheejith partnered with SR Group TM, the goal was to craft a sophisticated, active, and reassuring Instagram presence.</p>
+      <p class="mt-4">Our creative team had an incredible time developing this campaign! Combining top-tier cosmetic dentistry with light-hearted, educational social media content allowed us to build an engaging, vibrant feed. The collaborative planning sessions, clinical photoshoots, and creative brainstorming made this project one of our favorite branding journeys.</p>
+
+      <h3 class="text-xl font-bold mt-8 mb-4">1. The Challenge: Bridging Academic Excellence with Approachable Social Media</h3>
+      <p>While Dr. Sheejith and the team at Smile Craft are esteemed clinical leaders and academicians in Kerala, translating deep medical expertise into digestible, non-intimidating Instagram content requires a unique balance:</p>
+      <ul class="list-disc pl-5 mt-4 space-y-2">
+        <li><strong>Overcoming Patient Anxiety:</strong> Dental treatments—particularly implants, prosthodontics, and microscopic root canals—can feel complex or intimidating to patients.</li>
+        <li><strong>Maintaining High Professional Integrity:</strong> The content needed to reflect the clinic’s academic weight and ISO-certified standards.</li>
+        <li><strong>Driving Clinical Bookings:</strong> Ensuring local residents in Kozhikode (Calicut) can easily transition from browsing Instagram to booking a real-world consultation.</li>
+      </ul>
+
+      <img src="/portfolio/smilecraft/banner.jpeg" alt="Urban Banner Layout" class="w-full rounded-2xl my-8 border border-slate-100 shadow-sm" />
+
+      <h3 class="text-xl font-bold mt-8 mb-4">2. Our Solution: Designing the "Smile Craft" Content Ecosystem</h3>
+      
+      <h4 class="font-bold mt-4 mb-2">A. A Clean, Sophisticated Visual Aesthetic</h4>
+      <p>We structured a clean, modern grid layout using warm corporate tones, fresh whites, and professional blues. This aesthetic reflects the sterile, modern environment of their actual clinic while remaining visually warm and inviting.</p>
+
+      <h4 class="font-bold mt-6 mb-2">B. Educational & Reassuring Content Pillars</h4>
+      <p>To make complex treatments accessible, we broke down advanced procedures into simple, patient-first categories:</p>
+      <ul class="list-disc pl-5 mt-2 space-y-2">
+        <li><strong>Implantology & Prosthodontics Explained:</strong> Educational carousels and simple graphics highlighting how dental implants and crowns restore both function and confidence.</li>
+        <li><strong>Microscopic Endodontics (Root Canal Treatment):</strong> Sharing educational reels about pain-free, microscopic RCT procedures performed by Dr. Bhavya and the specialist endodontic team.</li>
+        <li><strong>Aesthetic Smile Design Highlights:</strong> Before-and-after transformation posts demonstrating cosmetic corrections, boosting local patient trust.</li>
+      </ul>
+
+      <img src="/portfolio/smilecraft/flatlay1.jpeg" alt="Flatlay Setup" class="w-full rounded-2xl my-8 border border-slate-100 shadow-sm" />
+
+      <h4 class="font-bold mt-6 mb-2">C. Localized Interactive Video (Reels)</h4>
+      <p>We designed short-form, high-impact video content (Reels) explaining everyday oral hygiene, dental myths, and preventative care. This strategy helps local patients get to know the friendly faces behind the clinical expertise.</p>
+
+      <h3 class="text-xl font-bold mt-8 mb-4">3. Why We Loved Working on This Project</h3>
+      <p>This collaboration was built on a foundation of creative freedom, open communication, and shared ideas. Dr. Sheejith and his team were highly supportive and receptive to modern, engaging content structures. Getting to translate advanced dental procedures into friendly, visual graphics was both intellectually rewarding and incredibly fun for our creative team.</p>
+
+      <img src="/portfolio/smilecraft/flatlay2.jpeg" alt="Brand Aesthetics" class="w-full rounded-2xl my-8 border border-slate-100 shadow-sm" />
+
+      <h3 class="text-xl font-bold mt-8 mb-4">Frequently Asked Questions</h3>
+      
+      <div class="space-y-4">
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+          <p class="font-bold text-slate-900 mb-1">Q: Who manages the Instagram page and social media brand identity for Dr. Sheejith’s Smile Craft Dental Clinic?</p>
+          <p class="text-slate-700">A: The Instagram page @dr.sheejith_smilecraft, clinical graphic design, and content strategy for Smile Craft Dental Clinic are managed by SR Group TM, a creative web design and digital branding agency.</p>
+        </div>
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+          <p class="font-bold text-slate-900 mb-1">Q: Where are the branches of Smile Craft Dental Clinic located in Kozhikode?</p>
+          <p class="text-slate-700">A: Smile Craft Dental Clinic operates from two key locations in Kozhikode, Kerala: Eranhipalam (Jawahar Housing Colony) and Panniyankara (1st Floor, Kalliyath Building).</p>
+        </div>
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+          <p class="font-bold text-slate-900 mb-1">Q: What dental specialists operate at Smile Craft Dental Clinic in Calicut?</p>
+          <p class="text-slate-700">A: The clinic is led by principal dentist Dr. Sheejith M. (Prosthodontist & Implantologist) and resident surgeon Dr. Bhavya (Endodontist), supported by a visiting panel of oral maxillofacial surgeons, orthodontists, pedodontists, and periodontists.</p>
+        </div>
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+          <p class="font-bold text-slate-900 mb-1">Q: How can I book an appointment at Dr. Sheejith's Smile Craft Dental Clinic?</p>
+          <p class="text-slate-700">A: Patients can find direct booking links, contact numbers, and location maps by visiting their official Instagram handle @dr.sheejith_smilecraft or via online dental appointment portals.</p>
+        </div>
+      </div>
+    `
   }
 ];
