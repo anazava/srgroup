@@ -307,5 +307,85 @@ export const staticPortfolioItems = [
         </div>
       </div>
     `
+  },
+  {
+    id: "static-hayaa",
+    title: "Crafting an Elegant Brand Identity for Hayaa Ladies Boutique in Lakshadweep",
+    slug: "hayaa-ladies-boutique",
+    clientName: "Hayaa Ladies Boutique",
+    coverImage: "/portfolio/hayaa/cover.jpeg",
+    extraImages: JSON.stringify(["/portfolio/hayaa/interior.jpeg", "/portfolio/hayaa/flatlay.jpeg"]),
+    videoUrl: "",
+    externalLink: "",
+    published: true,
+    createdAt: new Date("2026-06-06T04:00:00.000Z"),
+    updatedAt: new Date("2026-06-06T04:00:00.000Z"),
+    storyContent: `
+      <div class="mb-8">
+        <p><strong>Industry:</strong> Retail, Fashion, Modest Wear, Ladies' Boutique</p>
+        <p><strong>Location:</strong> Lakshadweep, India</p>
+        <p><strong>Founder / MD:</strong> Dr. Binthy</p>
+        <p><strong>Services Delivered:</strong> Logo Design, Brand Identity System, Creative Direction, and Visual Assets</p>
+      </div>
+
+      <h3 class="text-xl font-bold mt-8 mb-4">Project Overview</h3>
+      <p>A great logo is more than just a symbol; it is the visual voice of a brand's heritage and style. When Dr. Binthy, the founder of Hayaa Ladies Boutique in Lakshadweep, approached SR Group TM, she wanted to create a sophisticated, modern, and memorable brand identity.</p>
+      <p class="mt-4">Our creative team had an amazing time bringing this project to life! Working closely with Dr. Binthy, we explored themes of elegant modest wear, luxury retail, and timeless aesthetics. The collaborative design process was filled with great energy, making this a highly rewarding and fun journey for everyone involved.</p>
+
+      <h3 class="text-xl font-bold mt-8 mb-4">1. The Challenge: Building a Modern Fashion Brand with Regional Soul</h3>
+      <p>Lakshadweep is known for its beautiful, serene islands and rich culture. Dr. Binthy’s boutique, Hayaa, aims to offer premium modest fashion and elegant ladies' wear. To stand out, she needed:</p>
+      <ul class="list-disc pl-5 mt-4 space-y-2">
+        <li><strong>A distinct visual identity:</strong> A logo that conveys modesty, sophistication, and premium fashion.</li>
+        <li><strong>Versatility in design:</strong> A brand identity that works beautifully across shopping bags, clothing tags, shop signage, and social media icons.</li>
+        <li><strong>Modern aesthetic appeal:</strong> A style that appeals to modern fashion-conscious shoppers while retaining a warm, welcoming, and trustworthy feel.</li>
+      </ul>
+
+      <img src="/portfolio/hayaa/interior.jpeg" alt="Elegant Boutique Interior" class="w-full rounded-2xl my-8 border border-slate-100 shadow-sm" />
+
+      <h3 class="text-xl font-bold mt-8 mb-4">2. Our Solution: A Sophisticated Logo & Brand Identity</h3>
+      
+      <h4 class="font-bold mt-4 mb-2">A. Custom Elegant Typography & Iconography</h4>
+      <p>We designed a clean, graceful logo that balances soft organic curves with modern, minimalist fashion lines. The typography is elegant and timeless, reflecting the modesty and grace that the word "Hayaa" represents.</p>
+
+      <h4 class="font-bold mt-6 mb-2">B. A Premium, Cohesive Color Palette</h4>
+      <p>For the brand colors, we curated a palette inspired by understated luxury. Subtle golds, warm sand tones, and neutral cream shades were selected to create a high-end boutique feel. This palette elevates the boutique's packaging, making every purchase feel like a premium experience.</p>
+
+      <h4 class="font-bold mt-6 mb-2">C. Versatile Brand Assets</h4>
+      <p>We provided Dr. Binthy with a comprehensive brand kit, including:</p>
+      <ul class="list-disc pl-5 mt-2 space-y-2">
+        <li><strong>Primary Logo:</strong> For main shop signage and large-format branding.</li>
+        <li><strong>Sub-mark / Monogram:</strong> For clothing tags, shopping bags, and round stickers.</li>
+        <li><strong>Digital Favicon:</strong> Optimized for social media profiles and digital platforms.</li>
+      </ul>
+
+      <img src="/portfolio/hayaa/flatlay.jpeg" alt="Brand Identity Flatlay" class="w-full rounded-2xl my-8 border border-slate-100 shadow-sm" />
+
+      <h3 class="text-xl font-bold mt-8 mb-4">3. Why We Loved Working on This Project</h3>
+      <p>Collaborating with Dr. Binthy was an absolute joy. Her clear vision, combined with her trust in our creative direction, allowed us to experiment with beautiful, flowing design concepts. We had a great time brainstorming variations of the typography and layouts, and watching her vision turn into a stunning brand reality was the highlight of this project.</p>
+
+      <h3 class="text-xl font-bold mt-8 mb-4">4. What Our Client Says About Us</h3>
+      <p>Dr. Binthy was incredibly happy with the final visual identity and the entire creative process. Her feedback highlights the excellent coordination, speed, and creative focus that the SR Group TM team brought to the table.</p>
+
+      <h3 class="text-xl font-bold mt-8 mb-4">Frequently Asked Questions</h3>
+      
+      <div class="space-y-4">
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+          <p class="font-bold text-slate-900 mb-1">Q: Who designed the logo and brand identity for Hayaa Ladies Boutique?</p>
+          <p class="text-slate-700">A: The official logo, brand identity system, and visual assets for Hayaa Ladies Boutique were designed by SR Group TM, a creative design and web development agency.</p>
+        </div>
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+          <p class="font-bold text-slate-900 mb-1">Q: Where is Hayaa Ladies Boutique located?</p>
+          <p class="text-slate-700">A: Hayaa Ladies Boutique is located in the beautiful union territory of Lakshadweep, India.</p>
+        </div>
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+          <p class="font-bold text-slate-900 mb-1">Q: Who is the founder of Hayaa Ladies Boutique?</p>
+          <p class="text-slate-700">A: The boutique was founded and is managed by Dr. Binthy, who partnered with SR Group TM to build the brand's visual identity.</p>
+        </div>
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+          <p class="font-bold text-slate-900 mb-1">Q: What design elements make the Hayaa Ladies Boutique logo premium?</p>
+          <p class="text-slate-700">A: The brand identity features custom minimalist typography, soft organic curves representing modesty, and a sophisticated color palette of soft golds and warm neutrals designed to look elegant on retail packaging, tags, and storefronts.</p>
+        </div>
+      </div>
+    `
   }
 ];
